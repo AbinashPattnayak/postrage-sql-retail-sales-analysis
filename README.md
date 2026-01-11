@@ -1,63 +1,85 @@
-# postrage-sql-retail-sales-analysis
-Retail sales analysis using PostgreSQL with self-created synthetic data for portfolio demonstration.
+# PostgreSQL Retail Sales Project
 
-# Retail Sales Analysis using PostgreSQL
+## 1. Project Overview
+- Database built in PostgreSQL to simulate a retail sales environment.
+- Tables: customers, products, orders, order_items, payments.
+- Purpose: Sales analysis, revenue tracking, and product-level & category-level insights.
 
-**1. Project Overview**
-This project demonstrates retail sales analysis using PostgreSQL. The goal was to design a relational database, populate it with data, and perform analytical queries to extract meaningful business insights.
+## 2. Data Details
+- Synthetic / dummy data used → safe for resume/interviews.
+- Customers: 10
+- Products: 10
+- Orders: 10
+- Order_items: 12
+- Payments: 10
 
-The project showcases SQL skills including table design, joins, aggregations, and analytical queries.
+## 3. Key Analysis Done
 
----
+### Basic Metrics
+- Total customers:10
+- Total orders: 10
+- Total revenue: 170800.00
+- Average order value: 17080.000000000000
 
-**2. Dataset Information**
-- **Data Type:** Synthetic (self-created)
-- **Purpose:** Learning and portfolio demonstration
-- **Reason for Synthetic Data:** To avoid copyright issues and simulate real-world business scenarios.
+### Geography Analysis
+- Orders per city: 							
+"Delhi"		3
+"Pune"		1
+"Jaipur"	1
+"Chennai"	1
+"Hyderabad"	1
+"Bangalore"	1
+"Mumbai"	1
+"Ahmedabad"	1
+  - Shows regional sales distribution.
 
----
+### Product Analysis
+- Product-wise total quantity sold & total revenue: 
 
-**3. Tools & Skills Used**
-- PostgreSQL
-- pgAdmin
-- Database design (ER-style thinking)
-- SQL joins (INNER, LEFT)
-- Aggregations (SUM, COUNT)
-- GROUP BY, HAVING
-- Subqueries
+"Laptop"	2	110000.00
+"Smartphone"	1	30000.00
+"Office Chair"	1	12000.00
+"Headphones"	3	7500.00
+"Desk Lamp"	2	4000.00
+"Backpack"	1	1800.00
+"Water Bottle"	3	1800.00
+"Mouse"		2	1600.00
+"Keyboard"	1	1500.00
+"Notebook"	5	600.00
 
----
 
-**4.Database Schema**
-- Customers
-- Products
-- Orders
-- Order_Items
-- Payments
+- Category-wise revenue:
 
----
+"Electronics"	140000.00
+"Furniture"	16000.00
+"Accessories"	10600.00
+"Lifestyle"	3600.00
+"Stationery"	600.00
 
-**5. Key Analysis Performed**
-- Total orders and revenue by city and region
-- Product-wise revenue and quantity sold
-- Category-wise sales performance
-- Top-selling products
-- Payment method analysis
 
----
+- Top-selling product overall: 
 
-**6. Business Insights**
-- Certain cities and regions generate higher order volumes.
-- A small set of products contributes significantly to total revenue.
-- Category-level analysis helps identify high-performing product groups.
-- Payment trends provide insights into customer preferences.
+"Laptop"	2	110000.00
 
----
 
-**7.  Conclusion**
+
+## 4. SQL Concepts Used
+- CREATE TABLE with PRIMARY & FOREIGN KEYS
+- INSERT with correct column mapping
+- SUM(), AVG(), COUNT()
+- GROUP BY, ORDER BY, LIMIT
+- INNER JOINs for relational analysis
+
+## 5. Business Insights 
+- Top-selling categories & products identified → useful for procurement & marketing strategy. 
+- Revenue per city → helps regional sales focus.
+- Average order value → pricing & discount strategy analysis.
+
+
+**## 6.  Conclusion**
 This project demonstrates the ability to design a relational database and perform analytical SQL queries suitable for business reporting and decision-making.
 
 ---
 
-**8.  Note**
+## 7. Note
 All data used in this project is **synthetic and self-generated** for educational and portfolio purposes.
